@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Modelos integrados ao NetVoice">
+  <title>Modelos integrados ao NetVoice</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>NETVOICE Modelos integrados</h1>
+      </header>
+  
+
+  <h2>Arquivos para download:</h2>
+  <ul>
+    <li><a href="Fireflies.html" download>Fireflies.html</a></li>
+    <li><a href="lobo_ovelha.html" download>Lobo Ovelha.html</a></li>
+    <li><a href="Segregation.html" download>Segregation.html</a></li>
+    <li><a href="Traffic_Basic.html" download>Traffic Basic.html</a></li>
+  </ul>
+
+  <p>Para incluir novos modelos, você precisa adaptar a função <code>executarMonitoramento</code> no arquivo <code>script.js</code> para ler os dados a partir do código do NetLogo.</p>
+  <p>Para identificar corretamente como pegar os dados do modelo, é necessário abrir o código do modelo na aba Netlogo Code e analisar o início do modelo. Por exemplo, no Lobo e Ovelhas, o código tem a detalhação do <code>breed</code> informando o nome dos membros. Já no Traffic Basic, os carros estão 
+armazenados na variável padrão <code>turtle</code> já que não foi declarado como <code>breed</code>. Essa análise permite identificar os nomes das variáveis que devem
+ser adaptadas na função <code>executarMonitoramento</code> para cada novo modelo.</p>
+
+</body>
+</html>

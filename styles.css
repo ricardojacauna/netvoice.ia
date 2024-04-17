@@ -1,0 +1,76 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+p {
+  font-size: 16px;
+}
+
+button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.container {
+  display: flex;
+}
+
+section {
+  background-color: #fff;
+  padding: 20px;
+  margin-top: 20px;
+  flex: 1;
+}
+
+.hidden {
+  display: none;
+}
+
+h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+iframe {
+  flex: 2;
+  height: 600px;
+  border: none;
+}
+
+a:link {
+  color: rgb(164, 164, 253); /* Cor padrão para links não visitados */
+}
+
+a:visited {
+  color: rgb(164, 164, 253); /* Mesma cor para links visitados */
+}
+
+a:hover {
+  color: red; /* Cor quando o link é hover */
+}
+
+a:active {
+  color: green; /* Cor quando o link é clicado */
+}

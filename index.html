@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="NetVoice - uma ferramenta de apoio ao uso de Simulações NetLogo">
+  <title>NetVoice - uma ferramenta de apoio ao uso de Simulações NetLogo</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon_io/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon_io/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/favicon_io/favicon-16x16.png">
+  <link rel="manifest" href="/favicon_io/site.webmanifest">
+</head>
+<body>
+  <header>
+    <h1>NetVoice - uma ferramenta de apoio ao uso de Simulações NetLogo</h1>
+    <p>Acesse o site <a href="http://www.netlogoweb.org/">http://www.netlogoweb.org/</a>, escolha o modelo e exporte no formato HTML. Depois, clique no botão abaixo chamado Escolher arquivo, escolha o arquivo baixado e depois configure e rode sua simulação.</p>
+    <label for="arquivoSimulacao">Arquivo de Simulação:</label>
+    <input type="file" id="arquivoSimulacao">
+    <div style="float: right; font-size: 8px;">
+      <a href="gpt/index.htm">CONSULTAS A IA</a> | <a href="modelos/index.html">Modelos</a> | Versão 1.1
+    </div>    
+  </header>
+  <div class="container">
+    <iframe id="janelaSimulacao" title="Simulação NetLogo Carregada"></iframe>
+    <section id="configuracao" class="hidden">
+      <h2>Configurações</h2>
+      <label for="informarDestruicao" class="hidden">
+        Informar em áudio o momento de destruição de agentes
+        <input type="checkbox" id="informarDestruicao"> 
+      </label>
+      <br>
+      <label for="intervaloSegundos">
+        Intervalo de segundos para anunciar a quantidade de agentes:
+        <input type="text" id="intervaloSegundos" value="10">
+      </label>
+      <br>
+      <label for="tipoModelo">
+        Informe o tipo de modelo a ser carregado
+        <select id="tipoModelo">
+          <option value="wolveSheep">Lobos e Ovelhas</option>
+          <option value="fireflies">Fireflies</option>
+          <option value="traffic">Traffic Basic</option>
+          <option value="segregation">Segregation</option>
+        </select>
+      </label>
+
+      <br>
+      <label for="arquivoDownload">
+        Dados para salvar em arquivo:
+        <textarea id="arquivoDownload" style="width: 458px; height: 380px;"></textarea>
+      </label>
+      <br>
+      <button id="botaoDownload">Download</button>
+    </section>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>

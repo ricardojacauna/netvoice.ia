@@ -1,0 +1,21 @@
+considere que os dados a seguir constituem uma tabela com 4 colunas. considerem que as colunas possuem os seguinte rótulos: “segundo”, “ovelha”, “lobo”, “energia” que estão separados por ponto e vírgula “;”. Cada valor da coluna segundo representa uma linha da tabela separadas por um espaço em branco. Seguem os dados da tabela:
+
+agora, considere que essa tabela representa os dados de um gráfico cartesiano.
+Onde a coluna “segundo” representa o tempo e fará parte do eixo x ou abscissas.
+E as colunas “lobos”, ”ovelhas”, ”energia” estão representadas no eixo y ou ordenadas.
+
+segundo;ovelha;lobo;energia 
+10;186;78;51631 20;170;54;51768 30;230;41;49510 40;190;78;50177 50;180;86;51363 60;174;83;51952 70;160;68;52477 80;182;47;52503 90;160;76;54570 100;132;100;53555 110;168;91;51294 120;134;84;54262 130;198;60;51398 140;134;84;53244 150;161;69;52361 160;105;79;57173 170;102;80;56389 180;104;82;55795 190;216;52;51038 200;165;44;53635 210;128;76;53503 220;139;84;53471 230;173;71;52661 240;126;94;53763 250;161;97;51856 260;163;60;52935 270;154;86;53961 280;124;84;54359 290;192;66;49908 300;172;72;51880 310;173;81;52231 320;157;75;50830 
+
+
+
+Pergunta:
+Questão 01
+Você podes dizer se há algum momento que as colunas do y2 e y3 se encontram ou os valores da coluna y2 possui valores semelhantes aos valores da coluna y3?
+
+Questão 02
+Você: Analise os dados das colunas Y2 e Y3 em relação aos valores do eixo X. Há algum padrão discernível ou tendência que possa ser observada nesses dados?
+
+Questão 03
+Quais tendências ou correlações podem ser identificadas nos dados da tabela? Gostaria de saber se há alguma relação significativa entre os valores do eixo X e os valores do eixo Y.
+ 

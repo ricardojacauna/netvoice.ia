@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Chat GPT - Interaja com a IA de maneira simples">
+  
+  <title>NETVOICE Consultas aos dados - Apoio da IA</title>
+   <link rel="stylesheet" href="style.css">
+   <style>
+    .input-container {
+      display: flex;
+      align-items: center;
+    }
+
+    #labelTipoModelo {
+      margin: 0px 10px 0px 30px;
+    }
+
+  </style>
+</head>
+<body>
+  <header>
+    <h1>NETVOICE Consultas aos dados - Apoio da IA</h1>
+  </header>
+  
+  <main>
+    <div class="content">
+      <label for="result" id="legenda" >Resposta da IA:</label>
+      <textarea id="result" rows="6" disabled aria-describedby="result-desc" style="height: 50%;" placeholder="Aqui aparecerá a resposta da IA"></textarea>
+      <p id="result-desc" class="sr-only">Esta é a área onde você verá as respostas geradas pela IA.</p>
+      
+      <label for="inputQuestion" id="legenda">Faça uma pergunta:</label>
+      <textarea id="inputQuestion" aria-describedby="input-desc" style="height: 20%;" placeholder="Digite sua pergunta aqui"></textarea>
+      <p id="input-desc" class="sr-only">Digite suas perguntas na caixa de texto acima.</p>
+      <label for="header" id="legenda">Cabeçalho do arquivo:</label>
+      <textarea id="header" aria-describedby="input-desc" style="height: 20%;" placeholder="Digite a descrição da planilha aqui">
+        
+      </textarea>
+      <p id="input-desc" class="sr-only">Digite a descrição dos dados do arquivo na caixa de texto acima.</p>
+	  <!-- envio do arquivo txt --> 
+      <div class="input-container">
+        <input type="file" id="dataFileInput" accept=".txt, .csv">
+      
+        <label for="tipoModelo" id="labelTipoModelo">Tipo da Simulação</label>
+        <select id="tipoModelo">
+          <option value="wolveSheep">Lobos e Ovelhas</option>
+          <option value="fireflies">Fireflies</option>
+          <option value="traffic">Traffic Basic</option>
+          <option value="segregation">Segregation</option>
+        </select>
+      </div>
+      <div class="button-container">
+        <button id="submitButton">Submeter para o Chat GPT</button>
+      </div>
+    </div>
+  </main>
+		<footer>
+		<p>&copy; 2024 NETVOICE Consultas aos dados. Todos os direitos reservados.</p>
+		</footer>
+	  <script src="script.js"></script>
+</body>
+</html>
